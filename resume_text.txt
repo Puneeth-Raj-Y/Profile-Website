@@ -1,0 +1,59 @@
+PUNEETH RAJ Y
+9535230531 ⋄ Bangalore
+puneeth.ry17@gmail.com ⋄ linkedin.com/in/puneeth-raj-y ⋄ github.com/Puneeth-Raj-Y
+PROFILE
+MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts;
+experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable
+software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.
+SKILLS
+Technical Skills Java, Python, C++, DBMS, REST APIs, MySQL
+Soft Skills Problem Solving, Ownership, Collaboration
+WORK EXPERIENCE
+Data Science Intern Aug 2023 - Aug 2023
+Macrolytics Bangalore, IND
+• Designedandimplementeddata-drivenbackendmodulesusingPythonandSQLforhigh-volumedataprocessing.
+• Optimized database queries and improved system efficiency by 60
+• Automated workflows and improved system reliability through structured error handling and logging.
+• Worked in an agile team to deliver scalable and maintainable software solutions.
+• Tech Stack: Python, SQL, Git
+PROJECTS
+Grocery Expense Tracker Application
+• Designed and developed a backend-driven application with database integration to manage and track user
+expenses efficiently.
+• Implemented CRUD operations, optimized SQL queries, and structured relational database schema for perfor-
+mance and scalability.
+• Appliedmodularcodingpracticesandinputvalidationtoensuredataintegrityandsystemreliability. Integrated
+authentication and session handling for secure user access.
+Tech Stack: Python, SQL (MySQL), Git
+Automated Road Extraction using U-Net
+• Developed a deep learning model using U-Net architecture for automated road detection from satellite images.
+• Implementeddatapre-processing,modeltraining,andevaluationpipelineusingPythonandTensorFlow/PyTorch.
+• Optimized model performance through hyperparameter tuning and validation techniques.
+Tech Stack: Python,TensorFlow/PyTorch, NumPy, OpenCV
+CERTIFICATIONS
+• Introduction to Data Analysis Using Python Apr 2026
+Coursera (Authorized by Google)
+• SAP Certified - Business Data Cloud Apr 2026 - Apr 2027
+SAP (Official Certification Authority)
+• Data Science Job Simulation Jan 2026
+Forage(CompletedtasksinEDA,FeatureEngineering,Modeling,Evaluation):contentReference[oaicite:0]index=0
+
+--- PAGE BREAK ---
+
+• GenAI Powered Data Analytics Job Simulation Nov 2025
+Forage (EDA, Risk Profiling, AI-driven Strategy, Data Storytelling) :contentReference[oaicite:1]index=1
+• Data Analytics Job Simulation Nov 2025
+Deloitte via Forage (Data Analysis, Forensic Technology) :contentReference[oaicite:2]index=2
+EDUCATION
+Master of Computer Science, RNS Institute of Technology Expected 2027
+Bachelor of Science(Honours), JSS Academy of Technical Education Bangalore 2021 - 2024
+EXTRA-CURRICULAR ACTIVITIES
+• SecuredRunner-UppositioninTechnicalThesisPresentationatIgnitron2K25,conductedbyGMUniversity.
+• Volunteered in organizing an AI Hackathon at college, contributing to technical coordination and event exe-
+cution and Participated in AI Hackathon, collaborating in a team to develop problem-solving solutions under
+time constraints.
+LANGUAGES KNOWN
+Engilsh, Kannada, Tamil, Telugu
+
+--- PAGE BREAK ---
+

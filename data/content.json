@@ -1,0 +1,111 @@
+{
+  "name": "Puneeth Raj Y",
+  "title": "MCA Student",
+  "location": "Bangalore",
+  "phone": "9535230531",
+  "email": "puneeth.ry17@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/puneeth-raj-y-653934405/",
+  "github": "https://github.com/Puneeth-Raj-Y",
+  "summary": "MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.",
+  "skills": {
+    "technical": ["Java", "Python", "C++", "DBMS", "REST APIs", "MySQL"],
+    "soft": ["Problem Solving", "Ownership", "Collaboration"]
+  },
+  "experience": [
+    {
+      "title": "Data Science Intern",
+      "company": "Macrolytics",
+      "location": "Bangalore, IND",
+      "duration": "Aug 2023 - Aug 2023",
+      "highlights": [
+        "Designed and implemented data-driven backend modules using Python and SQL for high-volume data processing",
+        "Optimized database queries and improved system efficiency by 60%",
+        "Automated workflows and improved system reliability through structured error handling and logging",
+        "Worked in an agile team to deliver scalable and maintainable software solutions"
+      ],
+      "techStack": ["Python", "SQL", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "CareerPulse AI — Career Intelligence Engine",
+      "problem": "Job seekers struggle to identify relevant opportunities and understand skill gaps in competitive markets",
+      "outcome": "Built an AI-powered platform that matches skills to jobs with 85% accuracy and identifies missing skills for career growth",
+      "impact": "Featured Project",
+      "techStack": ["Flask", "Python", "SQLite", "HTML", "CSS"],
+      "liveUrl": "https://projects-1-9iql.onrender.com",
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Career_Pulse_Ai"
+    },
+    {
+      "title": "Grocery Expense Tracker Application",
+      "problem": "Manual expense tracking leads to inaccurate budgeting and financial oversight",
+      "outcome": "Developed a robust expense management system with 60% query optimization, CRUD operations, and secure user authentication with session handling",
+      "impact": "Production Ready",
+      "techStack": ["Python", "SQL (MySQL)", "Git"],
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Grocery-Expense-Tracker"
+    },
+    {
+      "title": "Automated Road Extraction using U-Net",
+      "problem": "Manual road mapping from satellite imagery is time-consuming and error-prone",
+      "outcome": "Created a deep learning model achieving 92% accuracy in automated road detection from satellite images with optimized hyperparameter tuning",
+      "impact": "Research Project",
+      "techStack": ["Python", "TensorFlow/PyTorch", "NumPy", "OpenCV"],
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Automated-Road-Extraction"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introduction to Data Analysis Using Python",
+      "provider": "Coursera (Authorized by Google)",
+      "date": "Apr 2026"
+    },
+    {
+      "title": "SAP Certified - Business Data Cloud",
+      "provider": "SAP (Official Certification Authority)",
+      "date": "Apr 2026 - Apr 2027"
+    },
+    {
+      "title": "Data Science Job Simulation",
+      "provider": "Forage",
+      "date": "Jan 2026",
+      "details": "Completed tasks in EDA, Feature Engineering, Modeling, Evaluation"
+    },
+    {
+      "title": "GenAI Powered Data Analytics Job Simulation",
+      "provider": "Forage",
+      "date": "Nov 2025",
+      "details": "EDA, Risk Profiling, AI-driven Strategy, Data Storytelling"
+    },
+    {
+      "title": "Data Analytics Job Simulation",
+      "provider": "Deloitte via Forage",
+      "date": "Nov 2025",
+      "details": "Data Analysis, Forensic Technology"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Science",
+      "institution": "RNS Institute of Technology",
+      "year": "Expected 2027"
+    },
+    {
+      "degree": "Bachelor of Science (Honours)",
+      "institution": "JSS Academy of Technical Education Bangalore",
+      "year": "2021 - 2024"
+    }
+  ],
+  "activities": [
+    {
+      "title": "Runner-Up - Technical Thesis Presentation",
+      "event": "Ignitron 2K25",
+      "organizer": "GM University"
+    },
+    {
+      "title": "Volunteered & Participated - AI Hackathon",
+      "event": "College AI Hackathon",
+      "role": "Technical coordination, event execution, and team collaboration in problem-solving"
+    }
+  ],
+  "languages": ["English", "Kannada", "Tamil", "Telugu"]
+}

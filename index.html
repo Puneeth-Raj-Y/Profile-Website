@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneeth Raj Y | Portfolio</title>
+    <meta name="description" content="Portfolio of Puneeth Raj Y — MCA Student, Backend Developer, Problem Solver">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- GSAP 3 + ScrollTrigger for scroll animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="color-scheme" content="dark">
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <!-- Animated mesh gradient background -->
+    <div class="mesh-bg" aria-hidden="true">
+        <div class="mesh-blob mesh-blob-1"></div>
+        <div class="mesh-blob mesh-blob-2"></div>
+        <div class="mesh-blob mesh-blob-3"></div>
+        <div class="mesh-blob mesh-blob-4"></div>
+    </div>
+
+    <!-- Grain overlay for texture -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Floating grid pattern -->
+    <div class="grid-pattern" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll progress -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="header" data-elevate data-scrolled="false">
+        <nav class="nav container" aria-label="Primary">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <div class="brand-logo" aria-hidden="true">
+                    <span class="brand-letter">P</span>
+                </div>
+                <span class="brand-text">Puneeth<span class="brand-accent">.</span></span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" class="main">
+        <!-- Hero Section - Figma-inspired split layout -->
+        <section id="hero" class="hero section">
+            <div class="hero-inner container">
+                <div class="hero-content">
+                    <div class="hero-tag" data-reveal>
+                        <span class="status-indicator"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <h1 class="hero-headline" data-reveal>
+                        <span class="line"><span class="word-wrap"><span class="word">Building</span></span></span>
+                        <span class="line"><span class="word-wrap"><span class="word">the future</span></span></span>
+                        <span class="line accent-line"><span class="word-wrap"><span class="word">with code</span></span> <span class="word-wrap"><span class="word hero-emoji">✦</span></span></span>
+                    </h1>
+                    <p class="hero-subtitle" data-reveal data-content="summary">
+                        MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL.
+                    </p>
+                    <div class="hero-actions" data-reveal>
+                        <a class="btn btn-primary" href="#projects">
+                            <span>View Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="#contact">
+                            <span>Get in touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-reveal>
+                    <div class="hero-card-stack">
+                        <div class="floating-card card-1">
+                            <div class="fc-icon">⚡</div>
+                            <div class="fc-text">
+                                <span class="fc-label">Backend Dev</span>
+                                <span class="fc-value">Java · Python</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="fc-icon">🎯</div>
+                            <div class="fc-text">
+                                <span class="fc-label">Focus Area</span>
+                                <span class="fc-value">Data Science</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="fc-icon">🚀</div>
+                            <div class="fc-text">
+                                <span class="fc-label">Projects</span>
+                                <span class="fc-value">3+ Shipped</span>
+                            </div>
+                        </div>
+                        <div class="profile-frame">
+                            <img src="assets/images/profile.jpeg" alt="Portrait of Puneeth Raj Y" loading="eager" decoding="async" onerror="this.style.display='none'">
+                            <div class="profile-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" data-reveal>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section - Figma Card Style -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">01</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">About Me</span>
+                </div>
+                <div class="about-layout">
+                    <div class="about-main" data-reveal>
+                        <h2 class="section-title">I craft <span class="text-gradient">scalable solutions</span> through clean, efficient code.</h2>
+                        <p class="about-body" data-content="summary">
+                            MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.
+                        </p>
+                    </div>
+                    <div class="about-stats" data-reveal>
+                        <div class="stat-card">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">60%</span>
+                            <span class="stat-label">Query Optimized</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">ML Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills - Bento Grid Layout -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">02</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Skills & Tools</span>
+                </div>
+                <h2 class="section-title" data-reveal>My <span class="text-gradient">toolkit</span></h2>
+                <div class="bento-grid" data-reveal>
+                    <div class="bento-card bento-lg" id="bento-technical">
+                        <div class="bento-header">
+                            <span class="bento-icon">💻</span>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div class="tags" id="skills-technical" aria-label="Technical skills"></div>
+                    </div>
+                    <div class="bento-card bento-sm" id="bento-soft">
+                        <div class="bento-header">
+                            <span class="bento-icon">🤝</span>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="tags" id="skills-soft" aria-label="Soft skills"></div>
+                    </div>
+                    <div class="bento-card bento-sm bento-accent">
+                        <div class="bento-header">
+                            <span class="bento-icon">🌍</span>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="tags" id="languages" aria-label="Languages"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects - Horizontal Scroll Cards -->
+        <section id="projects" class="section section-projects">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">03</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Selected Work</span>
+                </div>
+                <div class="projects-header" data-reveal>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Things I've built that I'm proud of.</p>
+                </div>
+            </div>
+            <div class="projects-scroll-wrapper">
+                <div class="projects-track" id="projects-grid" aria-label="Projects list"></div>
+            </div>
+        </section>
+
+        <!-- Experience - Timeline -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">04</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Experience</span>
+                </div>
+                <h2 class="section-title" data-reveal>Where I've <span class="text-gradient">worked</span></h2>
+                <div class="timeline" id="experience-list" aria-label="Work experience"></div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">05</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Education</span>
+                </div>
+                <h2 class="section-title" data-reveal>Academic <span class="text-gradient">journey</span></h2>
+                <div class="edu-grid" id="education-grid" aria-label="Education"></div>
+            </div>
+        </section>
+
+        <!-- Certifications - Marquee style -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">06</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Certifications</span>
+                </div>
+                <h2 class="section-title" data-reveal>Proof of <span class="text-gradient">learning</span></h2>
+                <div class="certs-grid" id="certifications-list" aria-label="Certifications"></div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section id="activities" class="section" style="display:none;">
+            <div class="container">
+                <div class="section-label" data-reveal>
+                    <span class="label-number">07</span>
+                    <span class="label-line"></span>
+                    <span class="label-text">Activities</span>
+                </div>
+                <h2 class="section-title" data-reveal>Beyond the <span class="text-gradient">classroom</span></h2>
+                <div class="activities-grid" id="activities-list" aria-label="Activities"></div>
+            </div>
+        </section>
+
+        <!-- Contact - Bold CTA Section -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-hero" data-reveal>
+                        <h2 class="contact-headline">Let's build<br>something <span class="text-gradient">great</span><span class="contact-dot">.</span></h2>
+                        <p class="contact-sub">I'm currently looking for internships and entry-level roles where I can contribute to backend systems, APIs, and data-driven applications.</p>
+                    </div>
+                    <div class="contact-cards" data-reveal>
+                        <a class="contact-card" data-link="email" href="mailto:puneeth.ry17@gmail.com">
+                            <div class="cc-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7l-10 6L2 7"/></svg>
+                            </div>
+                            <div class="cc-info">
+                                <span class="cc-label">Email</span>
+                                <span class="cc-value" data-content="email">puneeth.ry17@gmail.com</span>
+                            </div>
+                            <svg class="cc-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                        <a class="contact-card" data-link="phone" href="tel:9535230531">
+                            <div class="cc-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div class="cc-info">
+                                <span class="cc-label">Phone</span>
+                                <span class="cc-value" data-content="phone">9535230531</span>
+                            </div>
+                            <svg class="cc-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                        <a class="contact-card" data-link="linkedin" href="https://www.linkedin.com/in/puneeth-raj-y-653934405/" target="_blank" rel="noopener noreferrer">
+                            <div class="cc-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </div>
+                            <div class="cc-info">
+                                <span class="cc-label">LinkedIn</span>
+                                <span class="cc-value">Open profile</span>
+                            </div>
+                            <svg class="cc-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                        <a class="contact-card" data-link="github" href="https://github.com/Puneeth-Raj-Y" target="_blank" rel="noopener noreferrer">
+                            <div class="cc-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </div>
+                            <div class="cc-info">
+                                <span class="cc-label">GitHub</span>
+                                <span class="cc-value">Open profile</span>
+                            </div>
+                            <svg class="cc-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="brand-logo" aria-hidden="true">
+                    <span class="brand-letter">P</span>
+                </div>
+                <span class="footer-name">Puneeth Raj Y</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Puneeth-Raj-Y" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/puneeth-raj-y-653934405/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:puneeth.ry17@gmail.com" aria-label="Email">Email</a>
+            </div>
+            <p class="footer-copy">© <span id="year">2026</span> · Designed with precision</p>
+        </div>
+    </footer>
+
+    <script id="site-content" type="application/json">
+{
+  "name": "Puneeth Raj Y",
+  "title": "MCA Student",
+  "location": "Bangalore",
+  "phone": "9535230531",
+  "email": "puneeth.ry17@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/puneeth-raj-y-653934405/",
+  "github": "https://github.com/Puneeth-Raj-Y",
+  "summary": "MCA student with strong foundation in Data Structures, Algorithms, OOP, and core computer science concepts; experienced in building backend applications using Java/Python and SQL. Passionate about developing scalable software solutions, solving complex problems, and writing clean, efficient code in fast-paced environments.",
+  "skills": {
+    "technical": ["Java", "Python", "C++", "DBMS", "REST APIs", "MySQL"],
+    "soft": ["Problem Solving", "Ownership", "Collaboration"]
+  },
+  "experience": [
+    {
+      "title": "Data Science Intern",
+      "company": "Macrolytics",
+      "location": "Bangalore, IND",
+      "duration": "Aug 2023 - Aug 2023",
+      "highlights": [
+        "Designed and implemented data-driven backend modules using Python and SQL for high-volume data processing",
+        "Optimized database queries and improved system efficiency by 60%",
+        "Automated workflows and improved system reliability through structured error handling and logging",
+        "Worked in an agile team to deliver scalable and maintainable software solutions"
+      ],
+      "techStack": ["Python", "SQL", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "CareerPulse AI — Career Intelligence Engine",
+      "problem": "Job seekers struggle to identify relevant opportunities and understand skill gaps in competitive markets",
+      "outcome": "Built an AI-powered platform that matches skills to jobs with 85% accuracy and identifies missing skills for career growth",
+      "impact": "Featured Project",
+      "techStack": ["Flask", "Python", "SQLite", "HTML", "CSS"],
+      "liveUrl": "https://projects-1-9iql.onrender.com",
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Career_Pulse_Ai"
+    },
+    {
+      "title": "Grocery Expense Tracker Application",
+      "problem": "Manual expense tracking leads to inaccurate budgeting and financial oversight",
+      "outcome": "Developed a robust expense management system with 60% query optimization, CRUD operations, and secure user authentication with session handling",
+      "impact": "Production Ready",
+      "techStack": ["Python", "SQL (MySQL)", "Git"],
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Grocery-Expense-Tracker"
+    },
+    {
+      "title": "Automated Road Extraction using U-Net",
+      "problem": "Manual road mapping from satellite imagery is time-consuming and error-prone",
+      "outcome": "Created a deep learning model achieving 92% accuracy in automated road detection from satellite images with optimized hyperparameter tuning",
+      "impact": "Research Project",
+      "techStack": ["Python", "TensorFlow/PyTorch", "NumPy", "OpenCV"],
+      "repoUrl": "https://github.com/Puneeth-Raj-Y/Projects/tree/main/Automated-Road-Extraction"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introduction to Data Analysis Using Python",
+      "provider": "Coursera (Authorized by Google)",
+      "date": "Apr 2026"
+    },
+    {
+      "title": "SAP Certified - Business Data Cloud",
+      "provider": "SAP (Official Certification Authority)",
+      "date": "Apr 2026 - Apr 2027"
+    },
+    {
+      "title": "Data Science Job Simulation",
+      "provider": "Forage",
+      "date": "Jan 2026",
+      "details": "Completed tasks in EDA, Feature Engineering, Modeling, Evaluation"
+    },
+    {
+      "title": "GenAI Powered Data Analytics Job Simulation",
+      "provider": "Forage",
+      "date": "Nov 2025",
+      "details": "EDA, Risk Profiling, AI-driven Strategy, Data Storytelling"
+    },
+    {
+      "title": "Data Analytics Job Simulation",
+      "provider": "Deloitte via Forage",
+      "date": "Nov 2025",
+      "details": "Data Analysis, Forensic Technology"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Science",
+      "institution": "RNS Institute of Technology",
+      "year": "Expected 2027"
+    },
+    {
+      "degree": "Bachelor of Science (Honours)",
+      "institution": "JSS Academy of Technical Education Bangalore",
+      "year": "2021 - 2024"
+    }
+  ],
+  "activities": [
+    {
+      "title": "Runner-Up - Technical Thesis Presentation",
+      "event": "Ignitron 2K25",
+      "organizer": "GM University"
+    },
+    {
+      "title": "Volunteered & Participated - AI Hackathon",
+      "event": "College AI Hackathon",
+      "role": "Technical coordination, event execution, and team collaboration in problem-solving"
+    }
+  ],
+  "languages": ["English", "Kannada", "Tamil", "Telugu"]
+}
+    </script>
+
+    <script src="js/main.js?v=20260517"></script>
+</body>
+</html>
